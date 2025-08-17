@@ -1,0 +1,8 @@
+diffrax==0.7.0
+jax==0.6.2
+matplotlib==3.10.5
+numpy==2.3.2
+plotly==6.2.0
+scipy==1.16.1
+sympy==1.12
+sympy2jax==0.0.7
