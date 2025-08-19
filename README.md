@@ -1,7 +1,7 @@
 # Deterministic-CRN-to-Degree-2-CRN
 Some comparisons demonstrating a greedy conversion of a deterministic mass-action ODE system into an equivalent mass-action ODE system of degree 2. 'Equivalent' here means that both systems compute the same real number in the limit. Specifically, if the input system has variables x_1,...,x_n, then the output system has the same variables with the same values, but with their ODEs' expressions having lower degree. This means introducing auxiliary variables.
 
-Comment and uncomment `testn()` calls in `comparisons.py` to see two algorithms applied to an ODE system. The first - due to Carothers, et. al. (2005) uses repeated variable substitution to reduce the degree of the input system, which can have monomials of arbitrary high degree. The greedy algorithm tries to 'recycle' variables that have been introduced into the system when decomposing terms. Sometimes that works great. Sometimes it's worse!
+Comment and uncomment `testn()` calls in `comparisons.py` to see two algorithms applied to an ODE system. The first - due to Carothers, et. al. (2005) uses repeated variable substitution to reduce the degree of the input system, which can have monomials of arbitrary high degree. Ours, a greedy algorithm, tries to 'recycle' variables that have been introduced into the system when decomposing terms. Sometimes that works great. Sometimes it's worse!
 
 Keep in mind that there are *lots* of other possible decomposition strategies. Here, the heuristic used is as follows:
 
